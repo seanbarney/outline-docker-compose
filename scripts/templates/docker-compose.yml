@@ -87,7 +87,7 @@ services:
       DOMAINS: 'wiki.seanbarney.com -> http://wk-nginx'
       STAGE: 'production'  # Change to 'staging' for testing certificates without hitting rate limits
     volumes:
-      - https-portal-data:/var/lib/https-portal
+      - ./data/https-portal-data:/var/lib/https-portal
     depends_on:
       - wk-nginx
     networks:
