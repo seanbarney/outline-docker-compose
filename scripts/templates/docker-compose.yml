@@ -77,6 +77,21 @@ services:
       - ./env.oidc-server
     networks:
       - ${NETWORKS}
+  https-portal:
+    image: steveltn/https-portal:latest
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    environment:
+      DOMAINS: 'wiki.seanbarney.com -> http://wk-nginx'
+      STAGE: 'production'  # Change to 'staging' for testing certificates without hitting rate limits
+    volumes:
+      - https-portal-data:/var/lib/https-portal
+    depends_on:
+      - wk-nginx
+    networks:
+      - ${NETWORKS}
   wk-nginx:
     image: nginx
     ports:
