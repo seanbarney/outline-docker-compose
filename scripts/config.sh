@@ -12,7 +12,7 @@ DEFAULT_LANGUAGE=en_US
 LANGUAGE_CODE=en-us
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 TIME_ZONE=UTC
-FORCE_HTTPS=false
+FORCE_HTTPS=true
 # The domain in you email.
 # Comma separated list of domains to be allowed (optional).
 # If not set, the first user's domain is allowed by default.
