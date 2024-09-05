@@ -4,7 +4,7 @@
 FILE_STORAGE=local
 # The url used to vist this web site.
 URL=https://wiki.seanbarney.com
-PORT=443
+
 # The default interface language. See translate.getoutline.com for a list of
 # available language codes and their rough percentage translated.
 DEFAULT_LANGUAGE=en_US
@@ -29,7 +29,7 @@ MINIO_MC_VERSION=RELEASE.2022-11-17T21-20-39Z
 # If you use ip address to access outline, this ip and port should be same as the URL.
 # If this server behind a proxy(nginx), you can bind to `127.0.0.1`.
 HTTP_IP=0.0.0.0
-HTTP_PORT_IP=3000
+HTTP_PORT_IP=8888
 
 # Docker
 # If you server behind a proxy(nginx), and the proxy created by docker. You can use the proxy's network. Set the `NETWORKS` to proxy's network name, and set `NETWORKS_EXTERNAL` to `true` .
