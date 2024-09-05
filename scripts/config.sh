@@ -4,7 +4,6 @@
 FILE_STORAGE=local
 # The url used to vist this web site.
 URL=https://wiki.seanbarney.com
-
 # The default interface language. See translate.getoutline.com for a list of
 # available language codes and their rough percentage translated.
 DEFAULT_LANGUAGE=en_US
