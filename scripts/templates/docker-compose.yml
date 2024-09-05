@@ -84,7 +84,7 @@ services:
       - 443:443
     restart: always
     environment:
-      DOMAINS: 'wiki.seanbarney.com -> http://wk-outline:3000'
+      DOMAINS: 'wiki.seanbarney.com -> http://wk-nginx'
       STAGE: 'production'  # Change to 'staging' for testing certificates without hitting rate limits
     volumes:
       - ./data/https-portal-data:/var/lib/https-portal
