@@ -85,7 +85,7 @@ services:
     restart: always
     environment:
       DOMAINS: 'wiki.seanbarney.com -> http://wk-nginx'
-      STAGE: 'production'  # Change to 'staging' for testing certificates without hitting rate limits
+      STAGE: 'staging'  # Change to 'staging' for testing certificates without hitting rate limits
     volumes:
       - ./data/https-portal-data:/var/lib/https-portal
     depends_on:
