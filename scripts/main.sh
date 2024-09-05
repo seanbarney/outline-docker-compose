@@ -53,7 +53,6 @@ function create_outline_env_file {
     cp ./templates/$fn $env_file
 
     env_replace URL $URL $env_file
-    env_replace PORT $PORT $env_file
     env_replace SECRET_KEY $OUTLINE_SECRET_KEY $env_file
     env_replace UTILS_SECRET $OUTLINE_UTILS_SECRET $env_file
     env_replace DEFAULT_LANGUAGE $DEFAULT_LANGUAGE $env_file
