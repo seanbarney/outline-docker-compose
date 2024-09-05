@@ -4,6 +4,7 @@
 FILE_STORAGE=local
 # The url used to vist this web site.
 URL=https://wiki.seanbarney.com
+PORT=443
 
 # The default interface language. See translate.getoutline.com for a list of
 # available language codes and their rough percentage translated.
